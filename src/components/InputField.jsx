@@ -1,8 +1,8 @@
-export default function InputField({ label }) {
+export default function InputField({ id, label, value, onInputChange }) {
 	return (
 		<p>
 			<label>{label}</label>
-			<input type="number" value="0" required></input>
+			<input type="number" id={id} value={value} required onChange={onInputChange}></input>
 		</p>
 	);
 }
